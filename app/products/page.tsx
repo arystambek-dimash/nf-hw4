@@ -20,7 +20,7 @@ export default function Home() {
                         <SearchComponent/>
                     </section>
                     <section className="py-12 md:py-20">
-                        <ProductList products={products}/>
+                        <ProductList products={products || []}/>
                     </section>
                 </div>
             </section>
