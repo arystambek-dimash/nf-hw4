@@ -1,0 +1,9 @@
+.searchField {
+    outline: none;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.searchField:focus {
+    border-bottom-width: 2.5px;
+    border-color: #002F34;
+}
