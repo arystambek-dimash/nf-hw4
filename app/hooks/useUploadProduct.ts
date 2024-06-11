@@ -26,11 +26,6 @@ const useUploadProduct = () => {
                 const config: AxiosRequestConfig = {
                     headers: {
                         'Content-Type': 'multipart/form-data'
-                    },
-                    onUploadProgress: (progressEvent: ProgressEvent) => {
-                        if (progressEvent.total) {
-                            setProgress(Math.round((progressEvent.loaded * 100) / progressEvent.total));
-                        }
                     }
                 };
                 const formData = new FormData();
